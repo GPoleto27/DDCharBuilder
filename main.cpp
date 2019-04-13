@@ -88,6 +88,7 @@ classSelect:
 int main()
 {
     vector<Character> chars;
+    clearScreen();
     mainMenu(chars);
     return 0;
 }
