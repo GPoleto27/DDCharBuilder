@@ -1,3 +1,4 @@
+
 #include "CharBuilder.h"
 
 Character::Character(string name, Race charRace, Class charClass)
@@ -76,7 +77,7 @@ Character::Character(string name, Race charRace, Class charClass)
         stats.pop_back();
         strength = stats.back();
         stats.pop_back();
-        dexterity = stats.back();
+        constitution = stats.back();
         stats.pop_back();
 
         break;
@@ -268,7 +269,7 @@ Character::Character(string name, Race charRace, Class charClass)
 
     case HalfElf:
         int ab1, ab2;
-    abilitiesSelect:
+abilitiesSelect:
         cout << "Choose 2 abilities to add +1:\n";
         cout << "1 - Strength\n2 - Constitution\n3 - Dexterity\n4 - Intelligence\n5 - Wisdom\n";
         cin >> ab1 >> ab2;
@@ -371,93 +372,95 @@ void Character::showCharacter()
 {
     cout << "Name: " << name << "\n";
     cout << "Race: ";
-    switch (charRace) {
-        case Dragonborn:
-            cout << "Dragonborn";
-            break;
+    switch (charRace)
+    {
+    case Dragonborn:
+        cout << "Dragonborn";
+        break;
 
-        case Dwarf:
-            cout << "Dwarf";
-            break;
+    case Dwarf:
+        cout << "Dwarf";
+        break;
 
-        case Elf:
-            cout << "Elf";
-            break;
+    case Elf:
+        cout << "Elf";
+        break;
 
-        case Gnome:
-            cout << "Gnome";
-            break;
+    case Gnome:
+        cout << "Gnome";
+        break;
 
-        case HalfElf:
-            cout << "Half-Elf";
-            break;
+    case HalfElf:
+        cout << "Half-Elf";
+        break;
 
-        case Halfling:
-            cout << "Halfling";
-            break;
+    case Halfling:
+        cout << "Halfling";
+        break;
 
-        case HalfOrc:
-            cout << "Half-Orc";
-            break;
+    case HalfOrc:
+        cout << "Half-Orc";
+        break;
 
-        case Human:
-            cout << "Human";
-            break;
+    case Human:
+        cout << "Human";
+        break;
 
-        case Tiefling:
-            cout << "Tiefling";
-            break;
+    case Tiefling:
+        cout << "Tiefling";
+        break;
     }
     cout << "\n";
     cout << "Class: ";
-    switch(charClass) {
-        case Barbarian:
-            cout << "Barbarian";
-            break;
+    switch(charClass)
+    {
+    case Barbarian:
+        cout << "Barbarian";
+        break;
 
-        case Bard:
-            cout << "Bard";
-            break;
+    case Bard:
+        cout << "Bard";
+        break;
 
-        case Cleric:
-            cout << "Cleric";
-            break;
+    case Cleric:
+        cout << "Cleric";
+        break;
 
-        case Druid:
-            cout << "Druid";
-            break;
+    case Druid:
+        cout << "Druid";
+        break;
 
-        case Fighter:
-            cout << "Fighter";
-            break;
+    case Fighter:
+        cout << "Fighter";
+        break;
 
-        case Monk:
-            cout << "Monk";
-            break;
+    case Monk:
+        cout << "Monk";
+        break;
 
-        case Paladin:
-            cout << "Paladin";
-            break;
+    case Paladin:
+        cout << "Paladin";
+        break;
 
-        case Ranger:
-            cout << "Ranger";
-            break;
+    case Ranger:
+        cout << "Ranger";
+        break;
 
-        case Rogue:
-            cout << "Rogue";
-            break;
+    case Rogue:
+        cout << "Rogue";
+        break;
 
-        case Sorcerer:
-            cout << "Sorcerer";
-            break;
+    case Sorcerer:
+        cout << "Sorcerer";
+        break;
 
-        case Warlock:
-            cout << "Warlock";
-            break;
+    case Warlock:
+        cout << "Warlock";
+        break;
 
-        case Wizard:
-            cout << "Wizard";
-            break;
+    case Wizard:
+        cout << "Wizard";
+        break;
     }
     cout << "\n\n";
     cout << "Stats:\n";
