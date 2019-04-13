@@ -27,22 +27,24 @@ void mainMenu(vector<Character> chars)
         cin >> name;
         clearScreen();
 
-    raceSelect:
+raceSelect:
         cout << "Charater race:\n0 - Dragonborn\n1 - Dwarf\n2 - Elf\n3 - Gnome\n4 - Half-Elf\n5 - Halfling\n6 - Half-Orc\n7 - Human\n8 - Tiefling\n";
         cin >> a;
         if (a < 0 || a > 8)
         {
+            clearScreen();
             cout << "Select a valid option\n";
             goto raceSelect;
         }
         charRace = (Race)a;
         clearScreen();
 
-    classSelect:
+classSelect:
         cout << "Character class:\n0 - Barbarian\n1 - Bard\n2 - Cleric\n3 - Druid\n4 - Fighter\n5 - Monk\n6 - Paladin\n7 - Ranger\n8 - Rogue\n9 - Sorcerer\n10 - Warlock\n11 - Wizard\n";
         cin >> a;
         if (a < 0 || a > 11)
         {
+            clearScreen();
             cout << "Select a valid option\n";
             goto classSelect;
         }
@@ -52,8 +54,11 @@ void mainMenu(vector<Character> chars)
 
     case 2:
         clearScreen();
-        for (int i = 0; i < chars.size(); i++)
+        for (int i = 0; i < (int)chars.size(); i++)
+        {
             chars[i].showCharacter();
+            cout << "--------------------------------------------------\n";
+        }
         break;
 
     case 0:
@@ -73,9 +78,7 @@ void mainMenu(vector<Character> chars)
         newChar.showCharacter();
         cout << "Character successfully created\n";
     }
-    fflush(stdin);
-    getchar();
-    cout << "\nPress any button to continue\n";
+    cout << "Press any key to continue\n";
     fflush(stdin);
     getchar();
     clearScreen();
