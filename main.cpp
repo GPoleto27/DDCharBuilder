@@ -2,7 +2,7 @@
 
 void clearScreen()
 {
-#ifdef WINDOWS
+#ifdef _WIN32
     std::system("cls");
 #else
     // Assume POSIX
