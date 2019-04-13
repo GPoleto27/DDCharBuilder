@@ -78,6 +78,10 @@ classSelect:
         newChar.showCharacter();
         cout << "Character successfully created\n";
     }
+    #ifndef _WIN32
+    fflush(stdin);
+    getchar();
+    #endif
     cout << "Press any key to continue\n";
     fflush(stdin);
     getchar();
@@ -88,7 +92,6 @@ classSelect:
 int main()
 {
     vector<Character> chars;
-    clearScreen();
     mainMenu(chars);
     return 0;
 }
