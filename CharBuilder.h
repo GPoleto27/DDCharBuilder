@@ -35,11 +35,11 @@ enum Class
 
 class Character
 {
-  public:
+public:
     Character(string name, Race charRace, Class charClass);
     void showCharacter();
 
-  private:
+private:
     string name;
 
     Race charRace;
