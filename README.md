@@ -6,6 +6,7 @@ D&amp;D Character Builder, simulates the dice throws <i>(4d6)</i> and set the ch
   <li>Go to the <i>binaries</i> folder</li>
   <li>If you are using Windows, go to <i>win32</i> folder, else, go to <i>linux</i> folder</li>
   <li>Download the binary</li>
+  <li>If you are using linux, go to the folder you downloaded the binary and run <code>chmod 777 CharBuilder</code>
   <li>Run.</li>
 </ul>
 
