@@ -20,7 +20,7 @@ D&amp;D Character Builder, simulates the dice throws <i>(4d6)</i> and set the ch
   <li>Run <code>./CharBuilder</code></li>
 </ul>
 
-<h3>To-Do</h3>
+<h3>To-Do:</h3>
 <ul>
   <li>More classes and races</li>
   <li>Select stats set mode (4d6, buying points or default set)</li>
